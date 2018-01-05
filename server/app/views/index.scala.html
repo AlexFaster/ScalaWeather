@@ -1,0 +1,29 @@
+@()
+
+@main("Welcome to Play") {
+    <h1 align="center">Best Weather App!</h1>
+    <div>
+        <span>Lat: </span><input type="text" id="lat" placeholder="Lat">
+        <span>Lon: </span><input type="text" id="lon" placeholder="Lon">
+        <input type="button" name="Fetch" id="button_fetch" value="Fetch">
+    </div>
+    <div id="error"></div>
+    <div>
+        <h2>Current Weather</h2>
+        <div id="current_weather">
+
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>Weather follow 3 days</h2>
+        <div id="follow_weather">
+
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>Historical weather</h2>
+        <span>Doesn't work with free account</span>
+    </div>
+}

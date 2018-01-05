@@ -1,0 +1,10 @@
+# Routes
+
+
+GET        /                             controllers.HomeController.index
+
+GET        /assets/*file                 controllers.Assets.versioned(path="/public", file: Asset)
+
+GET        /v1/weather/current           controllers.WeatherController.getCurrentWeather(lat: Double, lon: Double)
+GET        /v1/weather/latest            controllers.WeatherController.getLatestWeather(lat: Double, lon: Double)
+GET        /v1/weather/historical        controllers.WeatherController.getHistoricalWeather(lat: Double, lon: Double)
